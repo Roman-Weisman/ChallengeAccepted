@@ -13,6 +13,9 @@
 		487CFEF8231EDDE4000B3B2B /* ChallengeAccepted.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 487CFEF6231EDDE4000B3B2B /* ChallengeAccepted.xcdatamodeld */; };
 		487CFEFA231EDDE4000B3B2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 487CFEF9231EDDE4000B3B2B /* Assets.xcassets */; };
 		487CFEFD231EDDE4000B3B2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 487CFEFB231EDDE4000B3B2B /* LaunchScreen.storyboard */; };
+		487CFF08231EE350000B3B2B /* UserAuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487CFF07231EE350000B3B2B /* UserAuthenticationViewController.swift */; };
+		487CFF0E2320A031000B3B2B /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487CFF0D2320A031000B3B2B /* SignInViewController.swift */; };
+		487CFF102320A7C1000B3B2B /* SAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487CFF0F2320A7C1000B3B2B /* SAButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		487CFEF9231EDDE4000B3B2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		487CFEFC231EDDE4000B3B2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		487CFEFE231EDDE4000B3B2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		487CFF07231EE350000B3B2B /* UserAuthenticationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthenticationViewController.swift; sourceTree = "<group>"; };
+		487CFF0D2320A031000B3B2B /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		487CFF0F2320A7C1000B3B2B /* SAButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,42 @@
 		487CFEEE231EDDE4000B3B2B /* ChallengeAccepted */ = {
 			isa = PBXGroup;
 			children = (
+				487CFF04231EDE23000B3B2B /* Models */,
+				487CFF05231EDE29000B3B2B /* Views */,
+				487CFF06231EDE2E000B3B2B /* Controllers */,
 				487CFEEF231EDDE4000B3B2B /* AppDelegate.swift */,
-				487CFEF1231EDDE4000B3B2B /* ViewController.swift */,
-				487CFEF3231EDDE4000B3B2B /* Main.storyboard */,
 				487CFEF9231EDDE4000B3B2B /* Assets.xcassets */,
-				487CFEFB231EDDE4000B3B2B /* LaunchScreen.storyboard */,
 				487CFEFE231EDDE4000B3B2B /* Info.plist */,
 				487CFEF6231EDDE4000B3B2B /* ChallengeAccepted.xcdatamodeld */,
 			);
 			path = ChallengeAccepted;
+			sourceTree = "<group>";
+		};
+		487CFF04231EDE23000B3B2B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		487CFF05231EDE29000B3B2B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				487CFEF3231EDDE4000B3B2B /* Main.storyboard */,
+				487CFEFB231EDDE4000B3B2B /* LaunchScreen.storyboard */,
+				487CFF0D2320A031000B3B2B /* SignInViewController.swift */,
+				487CFF0F2320A7C1000B3B2B /* SAButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		487CFF06231EDE2E000B3B2B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				487CFEF1231EDDE4000B3B2B /* ViewController.swift */,
+				487CFF07231EE350000B3B2B /* UserAuthenticationViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +172,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				487CFEF8231EDDE4000B3B2B /* ChallengeAccepted.xcdatamodeld in Sources */,
+				487CFF102320A7C1000B3B2B /* SAButton.swift in Sources */,
 				487CFEF2231EDDE4000B3B2B /* ViewController.swift in Sources */,
 				487CFEF0231EDDE4000B3B2B /* AppDelegate.swift in Sources */,
+				487CFF0E2320A031000B3B2B /* SignInViewController.swift in Sources */,
+				487CFF08231EE350000B3B2B /* UserAuthenticationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
