@@ -14,7 +14,6 @@
 		487CFEFA231EDDE4000B3B2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 487CFEF9231EDDE4000B3B2B /* Assets.xcassets */; };
 		487CFEFD231EDDE4000B3B2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 487CFEFB231EDDE4000B3B2B /* LaunchScreen.storyboard */; };
 		487CFF08231EE350000B3B2B /* UserAuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487CFF07231EE350000B3B2B /* UserAuthenticationViewController.swift */; };
-		487CFF0E2320A031000B3B2B /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487CFF0D2320A031000B3B2B /* SignInViewController.swift */; };
 		487CFF102320A7C1000B3B2B /* SAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487CFF0F2320A7C1000B3B2B /* SAButton.swift */; };
 /* End PBXBuildFile section */
 
@@ -28,7 +27,6 @@
 		487CFEFC231EDDE4000B3B2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		487CFEFE231EDDE4000B3B2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		487CFF07231EE350000B3B2B /* UserAuthenticationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthenticationViewController.swift; sourceTree = "<group>"; };
-		487CFF0D2320A031000B3B2B /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		487CFF0F2320A7C1000B3B2B /* SAButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,7 +83,6 @@
 			children = (
 				487CFEF3231EDDE4000B3B2B /* Main.storyboard */,
 				487CFEFB231EDDE4000B3B2B /* LaunchScreen.storyboard */,
-				487CFF0D2320A031000B3B2B /* SignInViewController.swift */,
 				487CFF0F2320A7C1000B3B2B /* SAButton.swift */,
 			);
 			path = Views;
@@ -175,7 +172,6 @@
 				487CFF102320A7C1000B3B2B /* SAButton.swift in Sources */,
 				487CFEF2231EDDE4000B3B2B /* ViewController.swift in Sources */,
 				487CFEF0231EDDE4000B3B2B /* AppDelegate.swift in Sources */,
-				487CFF0E2320A031000B3B2B /* SignInViewController.swift in Sources */,
 				487CFF08231EE350000B3B2B /* UserAuthenticationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
