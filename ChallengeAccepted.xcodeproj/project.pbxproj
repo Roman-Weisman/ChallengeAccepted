@@ -13,8 +13,14 @@
 		487CFEF8231EDDE4000B3B2B /* ChallengeAccepted.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 487CFEF6231EDDE4000B3B2B /* ChallengeAccepted.xcdatamodeld */; };
 		487CFEFA231EDDE4000B3B2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 487CFEF9231EDDE4000B3B2B /* Assets.xcassets */; };
 		487CFEFD231EDDE4000B3B2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 487CFEFB231EDDE4000B3B2B /* LaunchScreen.storyboard */; };
-		487CFF08231EE350000B3B2B /* UserAuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487CFF07231EE350000B3B2B /* UserAuthenticationViewController.swift */; };
 		487CFF102320A7C1000B3B2B /* SAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487CFF0F2320A7C1000B3B2B /* SAButton.swift */; };
+		487CFF14232153C5000B3B2B /* DBConnect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487CFF13232153C5000B3B2B /* DBConnect.swift */; };
+		487CFF1623216263000B3B2B /* MyCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487CFF1523216263000B3B2B /* MyCoreData.swift */; };
+		487CFF1823219562000B3B2B /* UserMO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487CFF1723219562000B3B2B /* UserMO.swift */; };
+		487CFF1A2321BCB0000B3B2B /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487CFF192321BCB0000B3B2B /* CoreDataManager.swift */; };
+		487CFF1E2322A9F9000B3B2B /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487CFF1D2322A9F9000B3B2B /* SignUpVC.swift */; };
+		487CFF20232317F5000B3B2B /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487CFF1F232317F5000B3B2B /* HomeVC.swift */; };
+		487CFF2323240354000B3B2B /* MyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487CFF2223240354000B3B2B /* MyVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +32,14 @@
 		487CFEF9231EDDE4000B3B2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		487CFEFC231EDDE4000B3B2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		487CFEFE231EDDE4000B3B2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		487CFF07231EE350000B3B2B /* UserAuthenticationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthenticationViewController.swift; sourceTree = "<group>"; };
 		487CFF0F2320A7C1000B3B2B /* SAButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAButton.swift; sourceTree = "<group>"; };
+		487CFF13232153C5000B3B2B /* DBConnect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBConnect.swift; sourceTree = "<group>"; };
+		487CFF1523216263000B3B2B /* MyCoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCoreData.swift; sourceTree = "<group>"; };
+		487CFF1723219562000B3B2B /* UserMO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserMO.swift; sourceTree = "<group>"; };
+		487CFF192321BCB0000B3B2B /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		487CFF1D2322A9F9000B3B2B /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		487CFF1F232317F5000B3B2B /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		487CFF2223240354000B3B2B /* MyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +78,6 @@
 				487CFEEF231EDDE4000B3B2B /* AppDelegate.swift */,
 				487CFEF9231EDDE4000B3B2B /* Assets.xcassets */,
 				487CFEFE231EDDE4000B3B2B /* Info.plist */,
-				487CFEF6231EDDE4000B3B2B /* ChallengeAccepted.xcdatamodeld */,
 			);
 			path = ChallengeAccepted;
 			sourceTree = "<group>";
@@ -74,6 +85,8 @@
 		487CFF04231EDE23000B3B2B /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				487CFF2123231FA6000B3B2B /* DB */,
+				487CFF1723219562000B3B2B /* UserMO.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -92,9 +105,22 @@
 			isa = PBXGroup;
 			children = (
 				487CFEF1231EDDE4000B3B2B /* ViewController.swift */,
-				487CFF07231EE350000B3B2B /* UserAuthenticationViewController.swift */,
+				487CFF1D2322A9F9000B3B2B /* SignUpVC.swift */,
+				487CFF1F232317F5000B3B2B /* HomeVC.swift */,
+				487CFF2223240354000B3B2B /* MyVC.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		487CFF2123231FA6000B3B2B /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				487CFEF6231EDDE4000B3B2B /* ChallengeAccepted.xcdatamodeld */,
+				487CFF192321BCB0000B3B2B /* CoreDataManager.swift */,
+				487CFF13232153C5000B3B2B /* DBConnect.swift */,
+				487CFF1523216263000B3B2B /* MyCoreData.swift */,
+			);
+			path = DB;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,10 +195,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				487CFEF8231EDDE4000B3B2B /* ChallengeAccepted.xcdatamodeld in Sources */,
+				487CFF1623216263000B3B2B /* MyCoreData.swift in Sources */,
+				487CFF1E2322A9F9000B3B2B /* SignUpVC.swift in Sources */,
+				487CFF1823219562000B3B2B /* UserMO.swift in Sources */,
+				487CFF2323240354000B3B2B /* MyVC.swift in Sources */,
 				487CFF102320A7C1000B3B2B /* SAButton.swift in Sources */,
 				487CFEF2231EDDE4000B3B2B /* ViewController.swift in Sources */,
 				487CFEF0231EDDE4000B3B2B /* AppDelegate.swift in Sources */,
-				487CFF08231EE350000B3B2B /* UserAuthenticationViewController.swift in Sources */,
+				487CFF20232317F5000B3B2B /* HomeVC.swift in Sources */,
+				487CFF1A2321BCB0000B3B2B /* CoreDataManager.swift in Sources */,
+				487CFF14232153C5000B3B2B /* DBConnect.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

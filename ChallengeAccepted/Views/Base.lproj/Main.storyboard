@@ -13,7 +13,7 @@
         <!--Log In / Sign Up-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ChallengeAccepted" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="landing" id="BYZ-38-t0r" customClass="ViewController" customModule="ChallengeAccepted" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -25,6 +25,7 @@
                                 </constraints>
                                 <state key="normal" title="Sign Up"/>
                                 <connections>
+                                    <action selector="signUp:" destination="VTM-7k-wJr" eventType="touchUpInside" id="J9m-ee-4gV"/>
                                     <segue destination="1Jt-QJ-EO8" kind="show" identifier="showSignUp" id="y4A-pI-jym"/>
                                 </connections>
                             </button>
@@ -57,38 +58,97 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="VTM-7k-wJr" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1003" y="783"/>
         </scene>
-        <!--User Authentication View Controller-->
+        <!--Sign UpVC-->
         <scene sceneID="mzW-MI-dKK">
             <objects>
-                <viewController id="1Jt-QJ-EO8" customClass="UserAuthenticationViewController" customModule="ChallengeAccepted" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="1Jt-QJ-EO8" customClass="SignUpVC" customModule="ChallengeAccepted" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CY7-TF-U1L">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="What's Your Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9ni-v2-jhD">
+                                <rect key="frame" x="100" y="138" width="214" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="nCp-0a-sfi"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="What's Your Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eOt-Pd-fFT">
+                                <rect key="frame" x="100" y="238" width="214" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="SgF-9P-oQW"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XaR-be-T3Q" customClass="SAButton" customModule="ChallengeAccepted" customModuleProvider="target">
+                                <rect key="frame" x="100" y="612" width="214" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="6iv-3q-lYy"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="IuA-LC-tjA"/>
+                                </constraints>
+                                <state key="normal" title="Sign Up"/>
+                                <connections>
+                                    <action selector="signUp:" destination="1Jt-QJ-EO8" eventType="touchUpInside" id="CLb-Lu-r1h"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="47H-fB-MeT" firstAttribute="trailing" secondItem="9ni-v2-jhD" secondAttribute="trailing" constant="100" id="15T-Si-awJ"/>
+                            <constraint firstItem="XaR-be-T3Q" firstAttribute="leading" secondItem="CY7-TF-U1L" secondAttribute="leading" constant="100" id="1hE-GC-yNO"/>
+                            <constraint firstItem="47H-fB-MeT" firstAttribute="bottom" secondItem="XaR-be-T3Q" secondAttribute="bottom" constant="200" id="AFZ-G1-Njy"/>
+                            <constraint firstItem="47H-fB-MeT" firstAttribute="trailing" secondItem="eOt-Pd-fFT" secondAttribute="trailing" constant="100" id="AFz-Zb-5cX"/>
+                            <constraint firstAttribute="trailing" secondItem="XaR-be-T3Q" secondAttribute="trailing" constant="100" id="BTM-ON-lhZ"/>
+                            <constraint firstItem="eOt-Pd-fFT" firstAttribute="top" secondItem="9ni-v2-jhD" secondAttribute="bottom" constant="50" id="Dml-rx-Qci"/>
+                            <constraint firstItem="eOt-Pd-fFT" firstAttribute="leading" secondItem="47H-fB-MeT" secondAttribute="leading" constant="100" id="TIT-z1-JfQ"/>
+                            <constraint firstItem="9ni-v2-jhD" firstAttribute="top" secondItem="47H-fB-MeT" secondAttribute="top" constant="50" id="htI-7T-1TA"/>
+                            <constraint firstItem="9ni-v2-jhD" firstAttribute="leading" secondItem="47H-fB-MeT" secondAttribute="leading" constant="100" id="sRY-1o-mjc"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="47H-fB-MeT"/>
                     </view>
+                    <connections>
+                        <outlet property="emailText" destination="eOt-Pd-fFT" id="sz8-rg-0dU"/>
+                        <outlet property="nameText" destination="9ni-v2-jhD" id="Jt2-uI-xEY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x4c-AQ-buM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1935" y="1167"/>
         </scene>
-        <!--View Controller-->
+        <!--HomeVC-->
         <scene sceneID="JLs-ER-dJv">
             <objects>
-                <viewController id="gnR-0x-AeO" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="bA9-SE-MD7">
+                <viewController storyboardIdentifier="home" id="gnR-0x-AeO" customClass="HomeVC" customModule="ChallengeAccepted" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="home" id="bA9-SE-MD7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UOg-44-Dwi">
+                                <rect key="frame" x="20" y="111" width="142" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="s7a-45-n4m"/>
                     </view>
+                    <connections>
+                        <outlet property="nameLabel" destination="UOg-44-Dwi" id="AfN-sm-2yt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H1j-O3-nCb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1935" y="449"/>
+            <point key="canvasLocation" x="1934.7826086956522" y="448.66071428571428"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="pIl-N4-lTR">
