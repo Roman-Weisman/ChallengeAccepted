@@ -22,7 +22,6 @@ class MyCoreData : DBConnect {
         let appDelegate : AppDelegate = UIApplication.shared.delegate as! AppDelegate
         managedObjectcontext = appDelegate.persistentContainer.viewContext as NSManagedObjectContext
         coreDataManager = CoreDataManager(nameOfTheModel: coreDataModelName)
-        
     }
     
     func insert(EntityName entityName : String) -> NSManagedObject {

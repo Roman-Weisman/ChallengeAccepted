@@ -9,52 +9,101 @@
 import UIKit
 import CoreData
 
-class SignUpVC : MyVC {
+class SignUpVC : UIViewController, HandleTapDelegate {
+
+    // MARK: - Properties
     
-    @IBOutlet weak var nameText: UITextField!
-    @IBOutlet weak var emailText: UITextField!
+    var textFieldArray: [UITextField] = []
+    var textFieldFlash: [CustomTextField] = []
+    var userTextField: CustomTextField!
+    var emailTextField: CustomTextField!
+    let userPlaceHolder = "Enter User Name"
+    let emailPlaceHolder = "Enter Password"
+    var delegate: HandleTapDelegate!
+
+    // MARK: - Init
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .white
         
-        onTap(TheView: self.view)
-        
-        nameText.becomeFirstResponder()
+        configureMenu()
+        configureStackView()
+        //nameText.becomeFirstResponder()
     }
     
-    @IBAction func signUp(_ sender: Any) {
+    // MARK: - Handlers
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+
+    private func configureMenu() {
+        userTextField = CustomTextField(placeHolder: userPlaceHolder)
+        emailTextField = CustomTextField(placeHolder: emailPlaceHolder)
         
-        // TODO: delete the if later, this is to avoid multiple unnecessary inserts
-        if(emailText.text != "") {
-            insertUser()
+        textFieldArray.append(userTextField)
+        textFieldArray.append(emailTextField)
+        
+    }
+    
+    private func configureStackView() {
+        
+        let signUp = CustomButton(imageName: LandingOption.SignUp.imageName, title: String.constants.signUp)
+        signUp.delegate = self
+        
+        let stackView = CustomStackView(arrangedSubviews: textFieldArray)
+        stackView.addArrangedSubview(signUp)
+        stackView.configureConstraints(view: view, stackView: stackView, width: 280, horizontalFlag: false)
+    }
+    
+    func onTap(tapOn: String) {
+
+        if userTextField.text == "" && emailTextField.text == "" {
+            textFieldFlash = [userTextField, emailTextField]
         }
-        openLandingPage()
+        else if userTextField.text == "" {
+            textFieldFlash = [userTextField]
+        }
+        else if emailTextField.text == "" {
+            textFieldFlash = [emailTextField]
+        } else {
+           //insertUser()
+            delegate.onTap(tapOn: String.constants.signIn)
+            view.removeFromSuperview()
+            navigationController?.view.removeFromSuperview()
+            removeFromParent()
+        }
+        
+        if textFieldFlash.count > 0 {
+            flash(textFiledArray: textFieldFlash)
+            textFieldFlash.removeAll()
+        }
     }
     
-    final private func createUser() {
-        let coreDataManager = CoreDataManager(nameOfTheModel: "ChallengeAccepted")
-        //let user = NSEntityDescription.insertNewObject(forEntityName: "User", into: coreDataManager.managedObjectContext) as! UserMO
-        
-        
-        do {
-            try coreDataManager.managedObjectContext.save()
-        } catch {
+    private func flash(textFiledArray: [CustomTextField]) {
+        UIView.animate(withDuration: 0.4, delay: 0.0, options: [.curveEaseOut], animations: {
+            for item in textFiledArray {
+                item.backgroundColor = .red
+            }
             
-        }
+        }, completion: {
+            finished in
+            UIView.animate(withDuration: 0.4, delay: 0.0, options: .curveEaseIn, animations: {
+                for item in textFiledArray {
+                    item.backgroundColor = .white
+                }
+            }, completion: nil)
+        })
     }
     
     private func insertUser() {
         let myCoreData : MyCoreData = MyCoreData.getInstance
         let user : User  = myCoreData.insert(EntityName: "User") as! User
         
-        user.name = nameText.text
-        user.email = emailText.text
-        
+        user.name = userTextField.text
+        user.email = emailTextField.text
+
         myCoreData.save()
-    }
-    
-    private func openLandingPage() {
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "home") as! HomeVC
-        self.present(vc, animated: true, completion: nil)
     }
 }
