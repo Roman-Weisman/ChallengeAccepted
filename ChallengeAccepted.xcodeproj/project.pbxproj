@@ -7,39 +7,51 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4831293E232973F4006C5849 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4831293D232973F4006C5849 /* CustomButton.swift */; };
+		48312940232AD139006C5849 /* CustomStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4831293F232AD139006C5849 /* CustomStackView.swift */; };
+		48312945232F326C006C5849 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48312944232F326C006C5849 /* CustomTextField.swift */; };
 		487CFEF0231EDDE4000B3B2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487CFEEF231EDDE4000B3B2B /* AppDelegate.swift */; };
-		487CFEF2231EDDE4000B3B2B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487CFEF1231EDDE4000B3B2B /* ViewController.swift */; };
 		487CFEF5231EDDE4000B3B2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 487CFEF3231EDDE4000B3B2B /* Main.storyboard */; };
 		487CFEF8231EDDE4000B3B2B /* ChallengeAccepted.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 487CFEF6231EDDE4000B3B2B /* ChallengeAccepted.xcdatamodeld */; };
 		487CFEFA231EDDE4000B3B2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 487CFEF9231EDDE4000B3B2B /* Assets.xcassets */; };
 		487CFEFD231EDDE4000B3B2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 487CFEFB231EDDE4000B3B2B /* LaunchScreen.storyboard */; };
-		487CFF102320A7C1000B3B2B /* SAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487CFF0F2320A7C1000B3B2B /* SAButton.swift */; };
-		487CFF14232153C5000B3B2B /* DBConnect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487CFF13232153C5000B3B2B /* DBConnect.swift */; };
+		487CFF14232153C5000B3B2B /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487CFF13232153C5000B3B2B /* Protocols.swift */; };
 		487CFF1623216263000B3B2B /* MyCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487CFF1523216263000B3B2B /* MyCoreData.swift */; };
 		487CFF1823219562000B3B2B /* UserMO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487CFF1723219562000B3B2B /* UserMO.swift */; };
 		487CFF1A2321BCB0000B3B2B /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487CFF192321BCB0000B3B2B /* CoreDataManager.swift */; };
 		487CFF1E2322A9F9000B3B2B /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487CFF1D2322A9F9000B3B2B /* SignUpVC.swift */; };
 		487CFF20232317F5000B3B2B /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487CFF1F232317F5000B3B2B /* HomeVC.swift */; };
-		487CFF2323240354000B3B2B /* MyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487CFF2223240354000B3B2B /* MyVC.swift */; };
+		487CFF2323240354000B3B2B /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487CFF2223240354000B3B2B /* MainVC.swift */; };
+		48F015F423256EBB0065ABBC /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F015F323256EBB0065ABBC /* MenuVC.swift */; };
+		48F015FC2325A4ED0065ABBC /* MenuOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F015FB2325A4ED0065ABBC /* MenuOption.swift */; };
+		48F016002326FBF30065ABBC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F015FF2326FBF30065ABBC /* Constants.swift */; };
+		48F01602232702460065ABBC /* LandingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F01601232702460065ABBC /* LandingVC.swift */; };
+		48F016082327F8A40065ABBC /* LandingOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F016072327F8A40065ABBC /* LandingOption.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4831293D232973F4006C5849 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		4831293F232AD139006C5849 /* CustomStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomStackView.swift; sourceTree = "<group>"; };
+		48312944232F326C006C5849 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		487CFEEC231EDDE4000B3B2B /* ChallengeAccepted.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChallengeAccepted.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		487CFEEF231EDDE4000B3B2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		487CFEF1231EDDE4000B3B2B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		487CFEF4231EDDE4000B3B2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		487CFEF7231EDDE4000B3B2B /* ChallengeAccepted.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ChallengeAccepted.xcdatamodel; sourceTree = "<group>"; };
 		487CFEF9231EDDE4000B3B2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		487CFEFC231EDDE4000B3B2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		487CFEFE231EDDE4000B3B2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		487CFF0F2320A7C1000B3B2B /* SAButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAButton.swift; sourceTree = "<group>"; };
-		487CFF13232153C5000B3B2B /* DBConnect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBConnect.swift; sourceTree = "<group>"; };
+		487CFF13232153C5000B3B2B /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		487CFF1523216263000B3B2B /* MyCoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCoreData.swift; sourceTree = "<group>"; };
 		487CFF1723219562000B3B2B /* UserMO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserMO.swift; sourceTree = "<group>"; };
 		487CFF192321BCB0000B3B2B /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		487CFF1D2322A9F9000B3B2B /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		487CFF1F232317F5000B3B2B /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
-		487CFF2223240354000B3B2B /* MyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyVC.swift; sourceTree = "<group>"; };
+		487CFF2223240354000B3B2B /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		48F015F323256EBB0065ABBC /* MenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
+		48F015FB2325A4ED0065ABBC /* MenuOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuOption.swift; sourceTree = "<group>"; };
+		48F015FF2326FBF30065ABBC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		48F01601232702460065ABBC /* LandingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingVC.swift; sourceTree = "<group>"; };
+		48F016072327F8A40065ABBC /* LandingOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingOption.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +84,7 @@
 		487CFEEE231EDDE4000B3B2B /* ChallengeAccepted */ = {
 			isa = PBXGroup;
 			children = (
+				48F015F2232562480065ABBC /* Utils */,
 				487CFF04231EDE23000B3B2B /* Models */,
 				487CFF05231EDE29000B3B2B /* Views */,
 				487CFF06231EDE2E000B3B2B /* Controllers */,
@@ -87,6 +100,8 @@
 			children = (
 				487CFF2123231FA6000B3B2B /* DB */,
 				487CFF1723219562000B3B2B /* UserMO.swift */,
+				48F016072327F8A40065ABBC /* LandingOption.swift */,
+				48F015FB2325A4ED0065ABBC /* MenuOption.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -96,7 +111,9 @@
 			children = (
 				487CFEF3231EDDE4000B3B2B /* Main.storyboard */,
 				487CFEFB231EDDE4000B3B2B /* LaunchScreen.storyboard */,
-				487CFF0F2320A7C1000B3B2B /* SAButton.swift */,
+				4831293D232973F4006C5849 /* CustomButton.swift */,
+				4831293F232AD139006C5849 /* CustomStackView.swift */,
+				48312944232F326C006C5849 /* CustomTextField.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -104,10 +121,11 @@
 		487CFF06231EDE2E000B3B2B /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				487CFEF1231EDDE4000B3B2B /* ViewController.swift */,
+				487CFF2223240354000B3B2B /* MainVC.swift */,
+				48F01601232702460065ABBC /* LandingVC.swift */,
 				487CFF1D2322A9F9000B3B2B /* SignUpVC.swift */,
 				487CFF1F232317F5000B3B2B /* HomeVC.swift */,
-				487CFF2223240354000B3B2B /* MyVC.swift */,
+				48F015F323256EBB0065ABBC /* MenuVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -117,10 +135,18 @@
 			children = (
 				487CFEF6231EDDE4000B3B2B /* ChallengeAccepted.xcdatamodeld */,
 				487CFF192321BCB0000B3B2B /* CoreDataManager.swift */,
-				487CFF13232153C5000B3B2B /* DBConnect.swift */,
 				487CFF1523216263000B3B2B /* MyCoreData.swift */,
 			);
 			path = DB;
+			sourceTree = "<group>";
+		};
+		48F015F2232562480065ABBC /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				487CFF13232153C5000B3B2B /* Protocols.swift */,
+				48F015FF2326FBF30065ABBC /* Constants.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,17 +220,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48312940232AD139006C5849 /* CustomStackView.swift in Sources */,
 				487CFEF8231EDDE4000B3B2B /* ChallengeAccepted.xcdatamodeld in Sources */,
 				487CFF1623216263000B3B2B /* MyCoreData.swift in Sources */,
 				487CFF1E2322A9F9000B3B2B /* SignUpVC.swift in Sources */,
 				487CFF1823219562000B3B2B /* UserMO.swift in Sources */,
-				487CFF2323240354000B3B2B /* MyVC.swift in Sources */,
-				487CFF102320A7C1000B3B2B /* SAButton.swift in Sources */,
-				487CFEF2231EDDE4000B3B2B /* ViewController.swift in Sources */,
+				487CFF2323240354000B3B2B /* MainVC.swift in Sources */,
+				48F015F423256EBB0065ABBC /* MenuVC.swift in Sources */,
+				48F016002326FBF30065ABBC /* Constants.swift in Sources */,
+				48312945232F326C006C5849 /* CustomTextField.swift in Sources */,
+				4831293E232973F4006C5849 /* CustomButton.swift in Sources */,
+				48F015FC2325A4ED0065ABBC /* MenuOption.swift in Sources */,
+				48F016082327F8A40065ABBC /* LandingOption.swift in Sources */,
 				487CFEF0231EDDE4000B3B2B /* AppDelegate.swift in Sources */,
 				487CFF20232317F5000B3B2B /* HomeVC.swift in Sources */,
+				48F01602232702460065ABBC /* LandingVC.swift in Sources */,
 				487CFF1A2321BCB0000B3B2B /* CoreDataManager.swift in Sources */,
-				487CFF14232153C5000B3B2B /* DBConnect.swift in Sources */,
+				487CFF14232153C5000B3B2B /* Protocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

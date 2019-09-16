@@ -18,8 +18,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        let coreDataManager = CoreDataManager(nameOfTheModel: "ChallengeAccepted")
-        print(coreDataManager.managedObjectContext)
+        window = UIWindow()
+        window?.makeKeyAndVisible()
+        window?.rootViewController = MainVC()
+        
         
         return true
     }

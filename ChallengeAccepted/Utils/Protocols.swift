@@ -1,5 +1,5 @@
 //
-//  DBConnect.swift
+//  Protocols.swift
 //  ChallengeAccepted
 //
 //  Created by Roman Weisman on 9/5/19.
@@ -12,4 +12,8 @@ protocol DBConnect  {
     func insert(EntityName entityName: String) -> NSManagedObject
     func get(ParamToSearcheBy param : String) -> String
     func save()
+}
+
+protocol HandleTapDelegate {
+    func onTap(tapOn: String)
 }
